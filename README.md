@@ -1,2 +1,2 @@
 # classifier-recall-over-time
-Depicts model recall m months into the future.
+Interactive dashboard depicting model recall m months into the future.
