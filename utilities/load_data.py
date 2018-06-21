@@ -4,7 +4,7 @@ import os
 
 def load_data():
 
-    data_path = '/Users/jstremme/Desktop/recall_over_time/data/test_data.csv'
+    data_path = '/Users/jstremme/Documents/git/classifier-recall-over-time/data/test_data.csv'
 
     return pd.read_csv(data_path)
 
