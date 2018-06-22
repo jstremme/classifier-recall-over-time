@@ -1,11 +1,12 @@
+from os.path import dirname, abspath
 import pandas as pd
 import numpy as np
 import os
 
 def load_data():
 
-    data_path = '/Users/jstremme/Documents/git/classifier-recall-over-time/data/test_data.csv'
-
+    project_path = dirname(dirname(abspath(__file__)))
+    data_path = project_path+'/data/test_data.csv'
     return pd.read_csv(data_path)
 
 def perf_measure(y_true, y_hat):
@@ -51,6 +52,4 @@ def get_performance_values(threshold):
     num_diagnosed = total_per_month['diagnosed'].values.astype(np.float)
 
     return months, num_recalled, num_diagnosed, recall, precision
-
-
 
